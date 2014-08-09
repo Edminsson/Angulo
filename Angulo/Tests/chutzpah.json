@@ -1,0 +1,10 @@
+﻿{
+    "References": [
+        { "Path":  "jasmine201.js"}
+    ],
+
+    "Tests": [
+        { "Path": "People", "Include": "*.js" }
+    ]
+
+}

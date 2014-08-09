@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>People</h2>
+<div class="container" ng-app="peopleApp" ng-controller="mainController">
+    <div ng-repeat="person in model.everyone">{{person.name}} - {{person.title}}</div>
+</div>
+
+
+@section scripts {
+
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/People/mainController.js"></script>
+    <script src="~/Scripts/People/peopleStorage.js"></script>
+    <script src="~/Scripts/People/application.js"></script>
+
+}
+
+
