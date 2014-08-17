@@ -42,6 +42,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Selenium.WebDriverBackedSelenium">
+      <HintPath>..\..\..\tredjepart\selenium-dotnet-2.42.0\net40\Selenium.WebDriverBackedSelenium.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -94,6 +97,15 @@
     <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.2\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="ThoughtWorks.Selenium.Core">
+      <HintPath>..\..\..\tredjepart\selenium-dotnet-2.42.0\net40\ThoughtWorks.Selenium.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver">
+      <HintPath>..\..\..\tredjepart\selenium-dotnet-2.42.0\net40\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\..\..\tredjepart\selenium-dotnet-2.42.0\net40\WebDriver.Support.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
@@ -510,7 +522,9 @@
     <Content Include="Tests\People\firstControllerTest.js" />
     <Content Include="Tests\People\firstControllerTestChutzpah.js" />
     <Content Include="Tests\People\testRef.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -557,6 +571,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\People\application.ts" />
     <TypeScriptCompile Include="Scripts\People\mainController.ts" />
+    <TypeScriptCompile Include="Scripts\People\peopleDirectives.ts" />
     <TypeScriptCompile Include="Scripts\People\peopleStorage.ts" />
     <TypeScriptCompile Include="Scripts\typings\angular-ui-bootstrap\angular-ui-bootstrap.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
